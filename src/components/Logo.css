@@ -1,0 +1,14 @@
+.logo {
+  text-decoration: none;
+  -webkit-text-decoration-color: #1d1d1f;
+  text-decoration-color: #1d1d1f;
+  font-size: 1.875rem;
+  font-weight: 300;
+  height: 4em;
+  /* font-family: GT Walsheim Pro, sans-serif; */
+  /* margin-bottom: 20px; */
+}
+
+.twelve {
+  font-weight: 700;
+}

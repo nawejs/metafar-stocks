@@ -1,0 +1,54 @@
+.list-stocks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.no-data-message {
+  color: red;
+  margin-top: 10px
+}
+table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  /* overflow-x: auto; */
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #aaa;
+  padding: 8px;
+  border: 1px solid #222;
+}
+
+.pagination a:hover {
+  background-color: #222;
+  color: #fff;
+z|}
+
+.pagination .active a {
+  background-color: #222;
+  color: #fff;
+}

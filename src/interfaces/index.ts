@@ -9,11 +9,16 @@ export interface AccionInterface {
 }
 
 export interface ChartInterface {
-  country: string;
-  currency: string;
-  exchange: string;
-  mic_code: string;
-  name: string;
-  symbol: string;
-  type: string;
+  close: string;
+  datetime: string;
+  high: string;
+  low: string;
+  open: string;
+  volume: string;
+}
+
+export interface ChartData {
+  show: boolean;
+  loading: boolean;
+  error: boolean;
 }
