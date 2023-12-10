@@ -3,12 +3,11 @@ import "./StockPage.css";
 import "../App.css";
 
 import ListStocks from "../components/ListStocks";
-import { AccionInterface } from "../interfaces";
+import { StockInterface } from "../interfaces";
 import debounce from "just-debounce-it";
-import { Link } from "react-router-dom";
 
 function StocksPage() {
-  const [stocks, setStocks] = useState<AccionInterface[]>([]);
+  const [stocks, setStocks] = useState<StockInterface[]>([]);
   const [stockSymbol, setStockSymbol] = useState<string>("");
   const [stockName, setStockName] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);

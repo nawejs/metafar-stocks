@@ -1,4 +1,4 @@
-export interface AccionInterface {
+export interface StockInterface {
   symbol: string;
   name: string;
   currency: string;

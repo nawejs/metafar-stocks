@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { AccionInterface } from "../interfaces";
+import { StockInterface } from "../interfaces";
 import "./ListStocks.css";
 import ReactPaginate from "react-paginate";
 import { useEffect, useState } from "react";
 
 interface ListStocksProps {
-  filterStocks: AccionInterface[]; // Cambiado el tipo de filterStocks
+  filterStocks: StockInterface[]; // Cambiado el tipo de filterStocks
   symbol: string;
   name: string;
 }
@@ -46,7 +46,7 @@ const ListStocks: React.FC<ListStocksProps> = ({
         </thead>
 
         <tbody>
-          {currentData.map((stock: AccionInterface) => (
+          {currentData.map((stock: StockInterface) => (
             <tr key={`${stock.symbol}+${stock.mic_code}`}>
               <td>
                 <Link to={`/stock-detail/${stock.symbol}/${stock.mic_code}`}>
